@@ -3,10 +3,7 @@
 /* Color Palette Generator Conatiner */
 #colorPaletteContainer {
     /* Box Model Properties */
-    
     box-sizing: border-box;
-    margin-left: 20px;
-    margin-right: 20px;
 
     /* Color Properties */
     background: rgba(17, 24, 39, 0.82);
@@ -45,8 +42,8 @@
     max-width: 580px;
     display: grid;
     grid-template-rows: 150px;
-    grid-template-columns: repeat(auto-fit , 100px);
-    column-gap: 20px;
+    grid-template-columns: repeat(5 , 100px);
+    gap: 20px;
 }
 
 /* Color Palette Colors Container's items */
@@ -129,6 +126,7 @@
 /* Copyed PopUp */
 #copyPopup {
     position: absolute;
+    top: 50vh;
     display: none;
     background-color: black;
     color: white;
