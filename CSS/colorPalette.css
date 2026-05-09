@@ -1,0 +1,127 @@
+/* This CSS File consist of all the CSS for color palette conatiner */
+
+/* Color Palette Generator Conatiner */
+#colorPaletteContainer {
+    /* Box Model Properties */
+    
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    /* Color Properties */
+    background: rgba(17, 24, 39, 0.82);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+    /* Flex Box Properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Color Palette Generator Title */
+#title {
+    color: rgb(248, 250, 252);
+}
+
+#title::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 5px;
+    margin: auto;
+    margin-top: 6px;
+    background: rgb(99, 102, 241);
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.6);
+}
+
+/* Color Palette Colors Container's Container */
+#colorPaletteColorsContainersContainer {
+    max-width: 580px;
+    display: grid;
+    grid-template-rows: 150px;
+    grid-template-columns: repeat(auto-fit , 100px);
+    column-gap: 20px;
+}
+
+/* Color Palette Colors Container's items */
+.items {
+    height: 150px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+/* Color Palette Colors Container's items -> Hover state */
+.items:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Color Palette Colors Container's items -> Click / active state */
+.items:active {
+    transform: translateY(0px) scale(0.96);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* Color Palette Colors Container's items Color Section */
+.colorHolder {
+    height: 110px;
+    width: 100px;
+    border-radius: 10px 10px 0px 0px / 10px 10px 0px 0px;
+}
+
+/* Color Palette Colors Container's items Color Code Section */
+.colorCodeHolder {
+    height: 40px;
+    width: 100px;
+    border-radius: 0px 0px 10px 10px / 0px 0px 10px 10px;
+    color: rgb(229, 231, 235);
+    font-size: 20px;
+    font-weight: 900;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Color Palette Generator Btn */
+#generatePaletteBtn {
+    background: linear-gradient(135deg, rgb(99, 102, 241), rgb(124, 58, 237));
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 18px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.35);
+    transition: all 0.2s ease;
+}
+
+/* Color Palette Generator Btn Text */
+#generatePaletteBtnText {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+/* Color Palette Generator Btn -> Hover Effect */
+#generatePaletteBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 26px rgba(99, 102, 241, 0.45);
+}
+
+/* Color Palette Generator Btn -> Active (when clicked) */
+#generatePaletteBtn:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 6px 14px rgba(99, 102, 241, 0.25);
+}
