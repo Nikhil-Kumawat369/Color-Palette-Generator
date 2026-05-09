@@ -125,3 +125,18 @@
     transform: translateY(1px) scale(0.98);
     box-shadow: 0 6px 14px rgba(99, 102, 241, 0.25);
 }
+
+/* Copyed PopUp */
+#copyPopup {
+    position: absolute;
+    display: none;
+    background-color: black;
+    color: white;
+
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+#copyPopup.show {
+    display: initial;
+}
