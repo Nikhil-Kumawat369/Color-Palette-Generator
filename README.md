@@ -117,7 +117,7 @@ ensuring consistent usability across different screen sizes.
 
 Experience the project live:
 
-🔗 View Live Demo
+🔗 [View Live Demo](https://nikhil-kumawat369.github.io/Color-Palette-Generator/)
 
 ---
 
